@@ -3,13 +3,22 @@
 echo "Uruchomiono skrypt $0"
 echo "Parametry skryptu ($#):"
 echo "1: $1"
-echo "2: $2"
-echo "3: $3"
-echo "4: $4"
-echo "5: $5"
-echo "6: $6"
-echo "7: $7"
-echo "8: $8"
-echo "9: $9"
-echo "10: ${10}"
+shift
+echo "2: $1"
+shift
+echo "3: $1"
+shift
+echo "4: $1"
+shift
+echo "5: $1"
+shift
+echo "6: $1"
+shift
+echo "7: $1"
+shift
+echo "8: $1"
+shift
+echo "9: $1"
+shift
+echo "10: $1"
 
