@@ -1,6 +1,7 @@
 #!/bin/bash
 
-dzisiaj="$(date "+%Y%m%d %H%M%S")"
+format_daty="+%Y%m%d %H%M%S"
+dzisiaj="$(date "$format_daty")"
 pakiet=findutils
 archiwum="/tmp/backup-$dzisiaj.tar.gz"
 
