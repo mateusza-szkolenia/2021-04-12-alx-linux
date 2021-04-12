@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Uruchomiono skrypt $0"
 echo "Parametry skryptu ($#):"
 echo "1: $1"
 echo "2: $2"
