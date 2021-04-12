@@ -2,12 +2,12 @@
 
 read -p 'Podaj imie: ' imie
 
-# sprawdzenie czy imie jest puste
+# wykrzyknik: zanegowanie kodu wyjścia
 
-if test "$imie"
+if ! test "$imie"
 then
-    echo "Witaj, $imie"
+    echo "Witaj, nieznany"
 else
-    echo "Witaj, anonimowy przybyszu"
+    echo "Witaj, $imie"
 fi
 
