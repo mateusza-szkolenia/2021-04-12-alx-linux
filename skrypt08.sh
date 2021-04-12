@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Parametry skryptu:"
+echo "Parametry skryptu ($#):"
 echo "1: $1"
 echo "2: $2"
 echo "3: $3"
