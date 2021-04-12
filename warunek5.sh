@@ -2,12 +2,10 @@
 
 read -p 'Podaj imie: ' imie
 
-# sprawdzenie czy imie jest puste
-
-if test "$imie"
+if [ "$imie" = "Mateusz" ]
 then
-    echo "Witaj, $imie"
+    echo "Witaj, nauczycielu"
 else
-    echo "Witaj, anonimowy przybyszu"
+    echo "Witaj, $imie"
 fi
 
