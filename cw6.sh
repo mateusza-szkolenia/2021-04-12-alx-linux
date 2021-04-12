@@ -6,10 +6,13 @@ rozszerzenie=xz
 
 format_daty="+%Y%m%d-%H%M%S"
 dzisiaj="$(date "$format_daty")"
-archiwum="/tmp/backup-$dzisiaj.tar.$rozszerzenie"
+
+nazwa_pliku="$(echo $katalog | tr / _)"
+
+archiwum="$nazwa_pliku-$dzisiaj.tar.$rozszerzenie"
 
 echo "Pakuję pliki"
-tar "${opcja}cvf" "$archiwum" "$katalog"
+tar "${opcja}cvf" ~/"$archiwum" "$katalog"
 
 echo "Utworzono backup $katalog"
 
