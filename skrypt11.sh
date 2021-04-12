@@ -1,7 +1,6 @@
 #!/bin/bash
 
-echo "Podaj rok urodzenia:"
-read rok
+read -p "Podaj rok urodzenia: " rok
 
 wiek=$((2021 - rok))
 
