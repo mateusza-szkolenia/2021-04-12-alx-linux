@@ -1,7 +1,7 @@
 #!/bin/bash
 
 imie=Basia
+nazwisko=Kowalska
 firma=ABC
 
-echo "$imie ($nazwisko) z firmy $firma"
 
