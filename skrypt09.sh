@@ -10,3 +10,5 @@
 # liczby od 009 do 013 włącznie (z zerami wiodącymi)
 ./skrypt08.sh raport-{009..013}.txt
 
+# iloczyn kartezjański (każdy z każdym)
+./skrypt08.sh raport-{2001..2003}-{zima,lato}.txt
