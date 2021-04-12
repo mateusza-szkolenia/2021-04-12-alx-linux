@@ -1,11 +1,13 @@
 #!/bin/bash
 
-if id intruz
+konto=intruz
+
+if id "$konto" > /dev/null
 then
-   echo "Konto intruz istnieje w systemie"
+   echo "Konto "$konto" istnieje w systemie"
    echo "Wszystko OK"
 else
-   echo "Brak takiego konta"
+   echo "Brak konta $konto"
    echo "Może chcesz jest założyć?"
 fi
 
