@@ -4,7 +4,7 @@ read -p "Ile masz lat? " wiek
 
 # porównywanie liczb
 # ge = greater or equal - większy albo równy
-if test "$wiek" -ge 18
+if [ "$wiek" -ge 18 ]
 then
 	echo "Jesteś pełnoletni"
 else
