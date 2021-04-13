@@ -15,6 +15,18 @@ gitea   ALL=(ALL)       NOPASSWD: /usr/bin/systemctl start gitea
 gitea   ALL=(ALL)       NOPASSWD: /usr/bin/systemctl stop gitea
 ```
 
+Aby dać prawo do edycji **jednego** pliku przez `sudo`:
+```
+gitea   ALL=(ALL)       NOPASSWD: /usr/bin/vim /etc/hosts
+```
+**Powyższa metoda jest błędna! Z vima można przejść do edycji dowolnego innego pliku lub nawet uruchomienia shella!**
+
+Poprawna metoda:
+```
+gitea   ALL=(ALL)       NOPASSWD: sudoedit /etc/hosts
+```
+
+
 ## użycie `sudo`
 
 Wczytanie i zapisanie wyniku do pliku na prawach roota.
