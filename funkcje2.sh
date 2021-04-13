@@ -1,19 +1,15 @@
 #!/bin/bash
 
 powitanie () {
+	imie="$1"
 	echo "Dzień dobry $imie"
 	licznik=$((licznik+1))
 }
 
 licznik=0
 
-imie=Mateusz
-powitanie
-
-imie=Marcin
-powitanie
-
-imie=Magda
-powitanie
+powitanie Mateusz
+powitanie Marcin
+powitanie Magda
 
 echo "Stan licznika: $licznik"
