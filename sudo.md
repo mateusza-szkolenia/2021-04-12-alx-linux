@@ -19,7 +19,7 @@ Aby dać prawo do edycji **jednego** pliku przez `sudo`:
 ```
 gitea   ALL=(ALL)       NOPASSWD: /usr/bin/vim /etc/hosts
 ```
-**Powyższa metoda jest błędna! Z vima można przejść do edycji dowolnego innego pliku lub nawet uruchomienia shella!**
+**Powyższa metoda jest błędna! Z vima można przejść do edycji dowolnego innego pliku lub nawet uruchomić shell!**
 
 Poprawna metoda:
 ```
