@@ -8,8 +8,12 @@ powitanie () {
 
 licznik=0
 
+imie=Xawery
+
 powitanie Mateusz
 powitanie Marcin
 powitanie Magda
+
+echo "Siema $imie"
 
 echo "Stan licznika: $licznik"
