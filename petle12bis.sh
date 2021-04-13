@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for rok in {2000..2021}
+for ((rok=2000; rok <= 2021; rok++))
 do
 	echo "Zaczyna się rok $rok"
 
