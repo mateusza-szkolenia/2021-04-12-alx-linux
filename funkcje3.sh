@@ -1,6 +1,7 @@
 #!/bin/bash
 
 powitanie () {
+	local imie
 	imie="$1"
 	echo "Dzień dobry $imie"
 	licznik=$((licznik+1))
